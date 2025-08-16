@@ -215,12 +215,12 @@
     gap: 0.25rem;
 }
 
-.social-links a svg{
+.social-links li a svg{
     stroke: var(--text);
     transition: stroke 0.3s ease-in;
 }
 
-.social-links a:hover svg{
+.social-links li a:hover svg{
     stroke: var(--active);
 }
 
