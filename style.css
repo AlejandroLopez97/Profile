@@ -24,6 +24,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 *:focus{
@@ -201,10 +202,12 @@
 .profile_about h3{
     font-size: 1.1rem;
     margin-bottom: 0.25rem;
+    color: var(--text-gray-light);
 }
 
 .profile_about p{
     font-size: 0.9rem;
+    color: var(--text);
 }
 
 .profile_about_bottom{
@@ -215,7 +218,13 @@
     gap: 0.25rem;
 }
 
-.social-links li a svg{
+.social-links li{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.social-links a svg{
     stroke: var(--text);
     transition: stroke 0.3s ease-in;
 }
@@ -349,7 +358,7 @@
     padding: 0.5rem 0;
 }
 
-.content-links li a{
+.content-links a{
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -360,7 +369,7 @@
     transition: all 0.3s;
 }
 
-.content-links li a .logo{
+.content-links a .logo{
     height: 2.735rem;
     width: 2.75rem;
     padding: 0.25rem;
